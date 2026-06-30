@@ -1,4 +1,4 @@
-###### **🎮Team Victory(팀 승리호)**
+### **🎮Team Victory(팀 승리호)**
 
 <img width="867" height="503" alt="image" src="https://github.com/user-attachments/assets/ade06f93-1b02-4d01-9501-3911637eb2e1" />
 ___
@@ -14,63 +14,19 @@ ___
    4-4. [RPC 네트워크 시스템](#4-4-RPC-네트워크-시스템)
 ___
 
-##### **1. 프로젝트 소개**
-이 프로젝트는 멀티플레이어 PVP 게임 Dead by Daylight를 모작하여 구현한 팀 프로젝트입니다.
-Unreal Engine 5와 C++를 기반으로 개발되었으며, Dedicated Server 환경에서 동작하도록 설계되었습니다.
-특히 Gameplay Ability System (GAS)을 활용하여 캐릭터의 스킬, 상태 이상, 상호작용 시스템을 확장성 있는 객체 지향적 구조로 구현하는 데 중점을 두었습니다.
+### **1. 프로젝트 소개**
 
-저는 이 프로젝트에서 팀장 및 생존자 캐릭터 개발을 맡아 캐릭터의 전체 구조 설계 및 구현,퍽 시스템 구현, 공용 상호작용 시스템, GAS 기반 어빌리티 시스템에 기여하였습니다.
 
-##### **2. 기술 스택**
-객체 지향 설계 (OOP)
-단일 책임 원칙: 아이템, 애드온, 캐릭터의 분리
-다형성 활용: 가상함수를 이용해 퍽 클래스 확장
-의존성 역전 원칙: 인터페이스를 통한 상호작용 시스템 구현
-디자인 패턴
-Object Pool Pattern: 발자국 시스템 성능 최적화
-Observer Pattern: 어빌리티 UI 시스템, 오라 시스템
-State Pattern: GameplayTag에 따른 캐릭터의 행동 로직 관리
-성능 최적화
-메모리 관리: Object Pooling으로 발자국 스폰 시 메모리 할당/해제 최소화
-효율적인 자료구조: 주기적으로 순회하는 오라 정보 컨테이너를 TArray로 사용하여 캐시 히트를 높임
-기술 스택
-분류	기술	비고
-Engine	Unreal Engine 5	C++, Blueprint
-Framework	Gameplay Ability System (GAS)	스킬 구현, 상태 관리
-Network	Dedicated Server	Replication, RPC
-Input	Enhanced Input System	GAS와 연결
-Tools	Notion, Discord, Perforce, Rider	협업 및 형상관리
 
-##### **3. 팀원 및 역할**
+### **2. 기술 스택**
 
-이름	역할	담당 파트
-정민수 (팀장)	Survivor	생존자 캐릭터, 상호작용 시스템, 퍽 시스템, 캐릭터 오라 및 발자국 시스템
-모명준	Object	로비, 게임 플로우, 오브젝트, 상호작용 시스템, 오브젝트 오라 시스템
-김미진	Killer	살인마 캐릭터, UI 베이스 설계
-유호근	Map	맵 랜덤 생성 시스템, 라이팅
-주요 기여 및 담당 역할
-저는 팀의 리더로서 프로젝트의 방향을 잡고, 기반 시스템을 구현했습니다. 단순한 기능 구현을 넘어, 객체 지향 원칙과 언리얼 엔진의 설계 철학을 준수하여 유지보수가 쉽고 확장이 용이한 코드를 작성했습니다.
 
-기여 영역 요약
-영역	기여도	주요 내용
-생존자 캐릭터	100%	캐릭터 구조 설계, GAS 연동 설계, 상태 관리, 입력 시스템, 네트워크 동기화
-상호작용 시스템	50%	인터페이스 기반 설계, 컴포넌트 구조, 네트워크 동기화, RPC기반 캐릭터 상호작용 애니메이션 동기화
-퍽 시스템	100%	퍽 베이스 클래스 및 초기화 로직 구현, 7개 퍽 구현
-아이템 시스템	100%	아이템 베이스 클래스, 장착 및 해제 구현, 애드온 시스템 구현
-캐릭터 오라 및 발자국 시스템	100%	CustomDepth 기반 오라 시각화, DecalComponent활용한 발자국 시각화, 중복 오라 처리, 서브시스템 활용한 네트워크 독립적 구조 설계
-공유 프레임워크	60%	베이스 캐릭터 설계, 유틸리티 클래스, 데이터 구조 정의
-세부 구현
-1. 캐릭터 기반 및 생존자 클래스
-관련 파일:
+### **3. 팀원 및 역할**
 
-SurvivorCharacter.cpp
-DBDCharacter.cpp
-설계 방향
-상속 구조를 통해 공통 기능을 재사용하고, 중요 기능을 컴포넌트화 하여 단일 책임 원칙을 준수하도록 설계되었습니다. 또한 GameplayTag를 활용해 State 패턴으로 상태 별 로직을 구현하였습니다.
 
-##### **4. 세부 구현**
+### **4. 세부 구현**
 
-### **4-1. 소행성 시스템**
+## **4-1. 소행성 시스템**
 GameplayTag 기반의 상태 관리를 통해 복잡한 캐릭터 상태를 처리합니다:
 
 Tag예시
@@ -85,7 +41,7 @@ GameplayAbility Trigger
 GameplayTagEvent
 AttributeValueChangeDelegates
 ---
-### **4-2. 인공위성 폐기물 생성**
+## **4-2. 인공위성 폐기물 생성**
 관련 파일:
 
 DBDCharacterSubsystem.cpp
@@ -98,7 +54,7 @@ DBDObjectPoolComponent.cpp
 
 
 
-### **4-3. 드론 AI**
+## **4-3. 드론 AI**
 관련 파일:
 
 DBDCharacterSubsystem.cpp
@@ -122,7 +78,7 @@ Bond 퍽: Bond 퍽을 든 생존자 화면에서만 10m 내 다른 생존자의 
 Empathy 퍽: Empathy 퍽을 든 생존자 화면에서만 20m 내 부상당한 생존자의 오라가 보임
 동작 시퀀스
 
-### **4-4. RPC 네트워크 시스템**
+## **4-4. RPC 네트워크 시스템**
 관련 파일:
 
 PerkComponent.cpp
