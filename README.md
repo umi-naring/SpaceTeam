@@ -1,7 +1,6 @@
 ##### **🎮Team Victory(팀 승리호)**
 
-<img width="859" height="979" alt="image" src="https://github.com/user-attachments/assets/0ca8c4aa-bf2a-4dbf-aca4-a92658b86c3e" />
-
+<img width="867" height="503" alt="image" src="https://github.com/user-attachments/assets/ade06f93-1b02-4d01-9501-3911637eb2e1" />
 ___
 
 목차
@@ -22,7 +21,7 @@ Unreal Engine 5와 C++를 기반으로 개발되었으며, Dedicated Server 환�
 
 저는 이 프로젝트에서 팀장 및 생존자 캐릭터 개발을 맡아 캐릭터의 전체 구조 설계 및 구현,퍽 시스템 구현, 공용 상호작용 시스템, GAS 기반 어빌리티 시스템에 기여하였습니다.
 
-하이라이트
+## **2. 기술 스택**
 객체 지향 설계 (OOP)
 단일 책임 원칙: 아이템, 애드온, 캐릭터의 분리
 다형성 활용: 가상함수를 이용해 퍽 클래스 확장
@@ -41,7 +40,9 @@ Framework	Gameplay Ability System (GAS)	스킬 구현, 상태 관리
 Network	Dedicated Server	Replication, RPC
 Input	Enhanced Input System	GAS와 연결
 Tools	Notion, Discord, Perforce, Rider	협업 및 형상관리
-팀원 및 역할
+
+## **3. 팀원 및 역할**
+
 이름	역할	담당 파트
 정민수 (팀장)	Survivor	생존자 캐릭터, 상호작용 시스템, 퍽 시스템, 캐릭터 오라 및 발자국 시스템
 모명준	Object	로비, 게임 플로우, 오브젝트, 상호작용 시스템, 오브젝트 오라 시스템
@@ -67,7 +68,7 @@ DBDCharacter.cpp
 설계 방향
 상속 구조를 통해 공통 기능을 재사용하고, 중요 기능을 컴포넌트화 하여 단일 책임 원칙을 준수하도록 설계되었습니다. 또한 GameplayTag를 활용해 State 패턴으로 상태 별 로직을 구현하였습니다.
 
-클래스 계층 구조
+## **4. 세부 구현**
 
 상태 관리 시스템
 GameplayTag 기반의 상태 관리를 통해 복잡한 캐릭터 상태를 처리합니다:
