@@ -1,4 +1,4 @@
-**###🎮Team Victory(팀 승리호)**
+**### 🎮Team Victory(팀 승리호)**
 
 <img width="859" height="979" alt="image" src="https://github.com/user-attachments/assets/0ca8c4aa-bf2a-4dbf-aca4-a92658b86c3e" />
 
