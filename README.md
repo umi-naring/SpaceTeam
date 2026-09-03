@@ -25,13 +25,6 @@
 | **IDE / Language** | Visual Studio / C++ |
 | **VCS & 협업** | GitHub, Jira |
 
-<p align="center">
-  <img src="input_file_3.png" width="100" alt="Unreal Engine"/>
-  <img src="input_file_1.png" width="100" alt="Visual Studio"/>
-  <img src="input_file_0.png" width="100" alt="GitHub"/>
-  <img src="input_file_2.png" width="100" alt="Jira"/>
-</p>
-
 ---
 
 ## 🎮 3. 게임 소개 (Game Concept & Flow)
